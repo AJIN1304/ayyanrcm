@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Design</title>
+   
+   
+   <style>
+
+body{
+    display: grid;
+    grid-template-columns: 20% 1fr 20%;
+    grid-template-rows: 15% auto 15%;
+    grid-template-areas:"header header header" "nav article ads" "footer footer footer" ;
+    grid-gap: 10px;
+    height: 100vh;
+    
+}
+
+header,nav,article,div,footer{
+    background-color: gold;
+    text-align: center;
+}
+
+#header{
+    grid-area: header;
+}
+
+#footer{
+    grid-area: footer;
+}
+
+#mainnav{
+    grid-area: nav;
+}
+
+#article{
+    grid-area: article;
+}
+
+#ads{
+    grid-area: ads;
+}
+
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    color: red;
+    font-weight: bolder;
+    padding: 10px;
+    
+}
+li{
+    list-style: none;
+}
+
+
+.dish{
+    font-size: larger;
+    font-weight: bold;
+    color: blue;
+    padding: 20px;
+    text-align: start;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+
+    </style>
+
+</head>
+
+
+<body>
+    
+
+    <header id="header">
+  
+
+        <div class="root">
+            <ul>
+                <li>HOME</li>
+                <li>ABOUT US</li>
+                <li>CALL NOW</li>
+                <li>CART</li>
+                <li>LOG IN</li>
+            </ul>
+        </div>
+
+
+
+
+    </header>
+
+
+    <nav id="mainnav">
+    <div class="list">
+        <h2 style="text-align: center; color: RED; font-weight: bold;">FOOD ITEMS</h2>
+        <ol> 
+            <li class="dish">1) Chicken Biriyani</li>
+            <li class="dish">2) Mutton Biriyani</li>
+            <li class="dish">3) Sea Food Items</li>
+            <li class="dish">4) Veg Biriyani</li>
+            <li class="dish">5) Chicken Noodeles</li>
+            <li class="dish">6) Rice & Curry</li>
+           
+        </ol>
+    </div>
+    </nav>
+
+
+    <article id="article">
+   
+     <h1 style="text-align: center; color: red;font-style: inherit;">MAIN DISHES</h1>
+        <div class="Main Dishes">
+
+            <div class="container" style="padding: 10PX;">
+
+                <div class="left">
+
+                    <img src="https://www.licious.in/blog/wp-content/uploads/2020/12/Hyderabadi-chicken-Biryani.jpg" width="200px" height="200px">
+
+                </div>
+
+                <div class="right">
+
+                    <h2>Hyderabadi-chicken-Biryani</h2>
+                    <P>Hyderabadi biryani (also known as Hyderabadi dum biryani) is a style of biryani originating from Hyderabad, India made with basmati rice and meat (mostly mutton). Originating in the kitchens of the Nizam of Hyderabad, it combines elements of Hyderabadi and Mughlai cuisines.</P>
+                </div>
+
+
+            </div>
+
+
+
+            <div class="container" style="padding-top: 70PX;">
+
+                <div class="left">
+
+                    <img src="https://vismaifood.com/storage/app/uploads/public/55d/d08/075/thumb__700_0_0_0_auto.jpg" width="200px" height="200px">
+
+                </div>
+
+                <div class="right">
+
+                    <h2>Hyderabadi-Haleem</h2>
+                    <P>Haleem is a stew composed of meat, lentils, and pounded wheat made into a thick paste. It is originally an Arabic dish and was introduced to the Hyderabad State by the Chaush people during the rule of the Nizams (the former rulers of Hyderabad State).</P>
+                </div>
+
+
+            </div>
+           
+
+
+        </div>
+
+
+
+    </article>
+
+
+    <div id="ads">
+        
+        <marquee  width="60%" direction="down" height="80%" scrollamount="20">
+            <img src="https://www.shutterstock.com/image-photo/dum-handi-chicken-biryani-prepared-600nw-2000023562.jpg" width="200px" height="200px">
+            <img src="https://static.toiimg.com/thumb/53096628.cms?imgsize=104874&width=800&height=800" width="200px" height="200px">
+            <img src="https://media.istockphoto.com/id/503730889/photo/chicken-biryani-1-11.jpg?s=612x612&w=0&k=20&c=CBn9vQQp0-QRiQZuEMUNbhN6BVlnrbOAicSEaXOQn_o=" width="200px" height="200px">
+            </marquee>
+
+    </div>
+
+    <footer id="footer">
+        <div class="footer-text">
+
+            <p style="text-align: center;font-weight: bolder;color: brown;" >Copyright &copy; 2024 by Ajin Kuriakose || All Rights Reserved.</p>
+
+        </div>
+    </footer>
+
+
+</body>
+
+
+</html>
